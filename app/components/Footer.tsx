@@ -12,7 +12,7 @@ const Footer = ({}: Props) => {
           width={360}
           height={360}
         />
-        <div className="absolute right-24 -top-24 size-28 -translate-y-14 md:size-48 md:-translate-y-28 z-10 rounded-full z-60">
+        <div className="absolute right-24 -top-24 size-28 -translate-y-14 md:size-48 md:-translate-y-28 rounded-full z-60">
           <CircleText />
         </div>
       </div>
