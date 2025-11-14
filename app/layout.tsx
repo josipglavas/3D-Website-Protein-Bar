@@ -5,6 +5,7 @@ import { ScrollTrigger, SplitText } from "gsap/all";
 import "./globals.css";
 import Navbar from "./navbar";
 import ViewCanvas from "./components/ViewCanvas";
+import Footer from "./components/Footer";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -37,7 +38,7 @@ export default function RootLayout({
           <Navbar />
           <main>{children}</main>
           <ViewCanvas />
-          {/* <Footer /> */}
+          <Footer />
         </>
       </body>
     </html>
