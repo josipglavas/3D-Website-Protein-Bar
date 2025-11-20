@@ -52,7 +52,7 @@ const ViewCanvas = (props: Props) => {
         innerStyles={{
           background: "#fffaf3",
           borderRadius: "10px",
-          padding: "16px 24px",
+          padding: "12px 12px",
           boxShadow: "0 0 12px rgba(0,0,0,0.08)",
         }}
         dataStyles={{

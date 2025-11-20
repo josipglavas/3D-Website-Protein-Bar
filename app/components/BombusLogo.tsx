@@ -70,7 +70,7 @@ const BombusLogo = ({
         alt={`Logo ${currentLogoIndex + 1}`}
         width={width}
         height={height}
-        className=" inset-0 transition-opacity duration-75"
+        className="inset-0 transition-opacity duration-75"
         priority
       />
     </a>

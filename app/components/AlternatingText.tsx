@@ -121,15 +121,17 @@ const AlternatingText = () => {
           >
             <div
               className={clsx(
-                index % 2 === 0 ? "col-start-1 pl-20" : "ml-20 md:col-start-2",
+                index % 2 === 0
+                  ? "col-start-1 md:pl-20"
+                  : "md:ml-20 md:col-start-2",
 
                 "rounded-lg p-4 backdrop-blur-lg max-md:bg-white/30 font-ainslie"
               )}
             >
-              <h2 className="text-balance text-6xl font-bold">
+              <h2 className="text-balance md:text-6xl text-4xl font-bold">
                 {details.title}
               </h2>
-              <div className="mt-5 text-2xl max-w-3/4">
+              <div className="mt-5 text-2xl md:max-w-3/4 max-w-full">
                 <p>{details.description}</p>
               </div>
             </div>

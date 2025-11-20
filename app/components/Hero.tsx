@@ -120,7 +120,7 @@ const Hero = () => {
             duration: 0.6,
           })
           .from("#details-text-subheading", {
-            y: 20,
+            y: 10,
             opacity: 0,
             duration: 0.3,
           });
@@ -152,49 +152,49 @@ const Hero = () => {
           <Chocolate count={170} speed={0.2} repeat={true} />
         </View>
       )}
-      <section className="h-screen flex items-start justify-start flex-col">
-        <div className="container mx-auto text-center pt-2">
-          <h1 className="uppercase text-9xl font-bold font-ainslie mb-7 text-light-brown flex flex-col items-center justify-center -space-y-2">
+      <section className="md:h-screen h-fit flex items-start justify-start flex-col">
+        <div className="container mx-auto text-center md:pt-2 pt-0">
+          <h1 className="uppercase md:text-9xl text-6xl font-bold font-ainslie md:mb-7 mb-5 text-light-brown flex flex-col items-center justify-center -space-y-2">
             <span className="flex gap-x-4">
               Vanilla<p className="font-hello-honey">&</p>
             </span>
             <span>Crispies</span>
           </h1>
 
-          <p className="text-6xl hero-subheading mb-2 font-eveleth text-brown/80">
-            PROTEIN 30 %
+          <p className="md:text-6xl text-4xl hero-subheading mb-2 font-eveleth text-brown/80">
+            PROTEIN 30%
           </p>
 
-          <div className="flex items-center justify-center gap-2 hero-description">
+          <div className="flex items-center justify-center gap-2 hero-description mx-4 md:mx-0">
             {benefits.map((benefit, index) => (
               <p
                 key={index}
-                className="text-xl my-4 text-brown/80 bg-amber-300/60 rounded-md w-fit py-1.5 px-4 font-birds font-bold"
+                className="md:text-xl text-md my-4 text-brown/80 bg-amber-300/60 rounded-md w-fit py-1.5 px-4 font-birds font-bold"
               >
                 {benefit}
               </p>
             ))}
           </div>
 
-          <button className="bg-brown/80 text-white py-3 px-8 mt-8 text-2xl rounded-md font-ainslie font-semibold hover:bg-brown transition-colors cursor-pointer">
+          <button className="bg-brown/80 text-white py-3 px-8 md:mt-8 mt-6 text-2xl rounded-md font-ainslie font-semibold hover:bg-brown transition-colors cursor-pointer">
             Buy Now
           </button>
         </div>
       </section>
       <section
         id="products"
-        className="min-h-screen h-screen w-full flex justify-center container flex-col mx-auto"
+        className="min-h-screen h-screen w-full flex justify-center container flex-col mx-auto md:px-0 px-2"
       >
         <h2
           ref={headingRef}
           id="details-text-heading"
-          className="text-7xl font-bold font-birds-bold text-white pb-1 max-w-xl text-left leading-tight uppercase whitespace-normal [word-break:break-word]"
+          className="md:text-7xl text-5xl font-bold font-birds-bold text-white md:pb-1 pb-2 md:max-w-xl max-w-3xl text-left leading-tight uppercase whitespace-normal [word-break:break-word]"
         >
           Healthy products full of taste and benefits!
         </h2>
         <p
           id="details-text-subheading"
-          className="text-2xl text-gray-200 max-w-xl font-ainslie"
+          className="text-2xl text-gray-100 max-w-xl font-ainslie"
         >
           Bombus are not only RAW fruit bars made from purely natural
           ingredients, but also other healthy products that we produce so that
